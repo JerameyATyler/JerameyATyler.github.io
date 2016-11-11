@@ -1,0 +1,49 @@
+<script>
+    $(function(){
+        $("#sidebar_outer").accordion({
+            icons: {"header": "ui-icon-triangle-1-e", "activeHeader": "ui-icon-triangle-1-s"}
+        });
+    });
+
+    $(".sidebar_link").click(function(e){
+        var route = $(e.target).attr("id").split('_');
+        location.search = $.param({section: route[0] + "_" + route[1]});
+    });
+
+    $(document).ready(function(){
+        var queryStrings = pGenerator.getQueryStrings();
+
+        sidebar.loadSection(queryStrings);
+    });
+</script>
+
+<div id="sidebar_outer" class="sidebar">
+    <h3>Chapter 1 - Fractions</h3>
+    <div>
+        <p id="1_1" class="sidebar_link">Section 1 - Simplification</p>
+        <p id="1_2" class="sidebar_link">Section 2 - Addition</p>
+        <p id="1_3" class="sidebar_link">Section 3 - Subtraction</p>
+        <p id="1_4" class="sidebar_link">Section 4 - Multiplication</p>
+    </div>
+    <h3>Chapter 2 - Fractions</h3>
+    <div>
+        <p id="2_1" class="sidebar_link">Section 1 - Simplification</p>
+        <p id="2_2" class="sidebar_link">Section 2 - Addition</p>
+        <p id="2_3" class="sidebar_link">Section 3 - Subtraction</p>
+        <p id="2_4" class="sidebar_link">Section 4 - Multiplication</p>
+    </div>
+    <h3>Chapter 3 - Fractions</h3>
+    <div>
+        <p id="3_1" class="sidebar_link">Section 1 - Simplification</p>
+        <p id="3_2" class="sidebar_link">Section 2 - Addition</p>
+        <p id="3_3" class="sidebar_link">Section 3 - Subtraction</p>
+        <p id="3_4" class="sidebar_link">Section 4 - Multiplication</p>
+    </div>
+    <h3>Chapter 4 - Fractions</h3>
+    <div>
+        <p id="4_1" class="sidebar_link">Section 1 - Simplification</p>
+        <p id="4_2" class="sidebar_link">Section 2 - Addition</p>
+        <p id="4_3" class="sidebar_link">Section 3 - Subtraction</p>
+        <p id="4_4" class="sidebar_link">Section 4 - Multiplication</p>
+    </div>
+</div>

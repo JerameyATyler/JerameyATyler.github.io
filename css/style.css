@@ -1,0 +1,56 @@
+body{
+    background-color: #3B653D;
+}
+
+/*
+Sidebar specific styles
+*/
+
+/*Sidebar as a whole*/
+.sidebar{
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 30%;
+    background-color: darkslateblue;
+}
+/*Inner part of accordion*/
+#sidebar_outer .ui-accordion-content{
+    background-color: #6D8A88;
+    color: white;
+    font-size: 10pt;
+    line-height: 16pt;
+}
+
+/*Accordion header*/
+#sidebar_outer .ui-accordion-header{
+    color:#ffffff;
+    background-color: darkslategray;
+}
+
+/*
+Problem viewer
+*/
+
+/*Problem viewer as a whole*/
+#problem_view{
+    position:absolute;
+    left: 35%;
+    top: 10%;
+    height: 60%;
+    width: 60%;
+    background-color: #3B653D;
+    border: thick solid silver;
+    border-radius: 4px;
+    color:ghostwhite;
+}
+
+/*Inner problem viewer*/
+.problem_view{
+
+}
+
+#404{
+    padding: 10px;
+}
