@@ -1,6 +1,3 @@
-body{
-    background-color: #3B653D;
-}
 
 /*
 Sidebar specific styles
@@ -12,21 +9,30 @@ Sidebar specific styles
     left: 0;
     top:0;
     height: 100%;
-    width: 30%;
-    background-color: darkslateblue;
+    width: 200px;
+    background-color: #663300;
 }
 /*Inner part of accordion*/
 #sidebar_outer .ui-accordion-content{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
     background-color: #6D8A88;
     color: white;
     font-size: 10pt;
     line-height: 16pt;
+
 }
 
 /*Accordion header*/
 #sidebar_outer .ui-accordion-header{
     color:#ffffff;
     background-color: darkslategray;
+}
+
+.sidebar_link:hover{
+    cursor: pointer;
+    background-color: #3B652a;
 }
 
 /*
@@ -36,10 +42,10 @@ Problem viewer
 /*Problem viewer as a whole*/
 #problem_view{
     position:absolute;
-    left: 35%;
+    left: 220px;
     top: 10%;
     height: 60%;
-    width: 60%;
+    width: 70%;
     background-color: #3B653D;
     border: thick solid silver;
     border-radius: 4px;
@@ -54,3 +60,58 @@ Problem viewer
 #404{
     padding: 10px;
 }
+
+/*
+Background
+*/
+#background{
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+#wall{
+    position:relative;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #FFFDD0;
+}
+
+#upper_border{
+    position:relative;
+    width: 100%;
+    height: 15%;
+    top:0;
+    left:0;
+    background-color: royalblue;
+    color:white;
+}
+
+#upper_border #tiles{
+
+}
+
+#upper_border #tiles #tile{
+
+}
+
+#lower_border{
+
+}
+
+.window{
+
+}
+
+#window1{
+
+}
+
+#window2{
+
+}
+

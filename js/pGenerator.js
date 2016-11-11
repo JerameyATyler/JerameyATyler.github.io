@@ -1,4 +1,9 @@
 var pGenerator = {
+    init: function(){
+        $("#background").load("includes/background.html");
+        $.getScript("js/sidebar.js");
+    },
+
     updateQueryStringParameter:function(uri, key, value){
         var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
         var separator = uri.indexOf('?') !== -1 ? "&" : "?";
@@ -9,6 +14,7 @@ var pGenerator = {
             return uri + separator + key + "=" + value;
         }
     },
+
     getQueryStrings: function(){
         var vars = [], hash;
         var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
@@ -21,3 +27,7 @@ var pGenerator = {
         return vars;
     }
 }
+
+$(document).ready(function(){
+    pGenerator.init();
+})
