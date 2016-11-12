@@ -93,7 +93,7 @@ Background
 #upper_border{
     position:relative;
     width: 100%;
-    height: 15%;
+    height: 10%;
     top:0;
     left:0;
     background-color: royalblue;
@@ -101,11 +101,20 @@ Background
 }
 
 #upper_border #tiles{
-
+    position:relative;
+    width:100%;
+    height: 90%;
+    margin: 0 auto;
 }
 
-#upper_border #tiles #tile{
-
+#upper_border #tiles tr td{
+    border: 1px solid black;
+    background-color: #007fff;
+    text-shadow: 1px 1px black;
+    width: 4%;
+    font-size: 4vw;
+    height: 90%;
+    margin: 0 auto;
 }
 
 #lower_border{
