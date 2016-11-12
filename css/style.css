@@ -11,6 +11,7 @@ Sidebar specific styles
     height: 100%;
     width: 200px;
     background-color: #663300;
+    border: medium black outset;
 }
 /*
 Sidebar menu
@@ -54,7 +55,7 @@ Problem viewer
     height: 60%;
     width: 70%;
     background-color: #3B653D;
-    border: thick solid silver;
+    border: thick inset silver;
     border-radius: 4px;
     color:ghostwhite;
 }
@@ -124,6 +125,7 @@ Background
     bottom: 0;
     left: 0;
     background: #b69b4c;
+    border: medium saddlebrown solid;
 }
 
 .window{
