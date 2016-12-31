@@ -1,13 +1,7 @@
 <script>
-    $(function(){
-        $("#sidebar_outer").accordion({
-            icons: {"header": "ui-icon-triangle-1-e", "activeHeader": "ui-icon-triangle-1-s"}
-        });
-    });
 
     $(".sidebar_link").click(function(e){
-        var route = $(e.target).attr("id").split('_');
-        location.search = $.param({section: route[0] + "_" + route[1]});
+        location.search = $.param({section: $(e.target).attr("id")});
     });
 
     $(document).ready(function(){
@@ -17,13 +11,16 @@
     });
 </script>
 
-<div id="sidebar_outer" class="sidebar">
-    <h3>Chapter 1 - Fractions</h3>
+<div id="sidebar_outer" class="accordion">
+    <h3>Chapter 1 - The Set of Real Numbers</h3>
     <div>
-        <p id="1_1" class="sidebar_link">Section 1 - Simplification</p>
-        <p id="1_2" class="sidebar_link">Section 2 - Addition</p>
-        <p id="1_3" class="sidebar_link">Section 3 - Subtraction</p>
-        <p id="1_4" class="sidebar_link">Section 4 - Multiplication</p>
+        <div class="accordion">
+            <h3>Fractions</h3>
+            <div>
+                <p id="1_1_definitions" class="sidebar_link">Basic Definitions</p>
+                <p id="1_1_factorization" class="sidebar_link">Prime Factorization</p>
+            </div>
+        </div>
     </div>
     <h3>Chapter 2 - Fractions</h3>
     <div>

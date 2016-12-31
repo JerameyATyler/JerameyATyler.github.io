@@ -7,7 +7,7 @@ var mf = {
         return Math.random() * (max - min) + min;
     },
 
-    getRandomInt: function (min, max) {
+    getRandomIntExclusive: function (min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min)) + min;
@@ -26,5 +26,9 @@ var mf = {
             a = temp;
         }
         return a;
+    },
+
+    getBoolean: function(){
+        return (mf.getRandomIntInclusive(0, 1) == 0);
     }
 }
