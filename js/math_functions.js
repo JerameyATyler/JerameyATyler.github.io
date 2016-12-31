@@ -19,6 +19,10 @@ var mf = {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     },
 
+    getRandomFromList: function(list){
+        return list[Math.floor(Math.random()*list.length)];
+    },
+
     getGCD: function (a, b) {
         while (b > 0) {
             temp = b;
