@@ -55,7 +55,7 @@ var fraction = {
     },
 
     fractionToHtml : function(f){
-        return '<p><span class="frac"><sup>' + f['numerator'] + '</sup><span>/</span><sub>'
-            + f['denominator'] + '</sub></span></p>';
+        return '<p class="problem"><span class="frac problem"><sup class="problem">' + f['numerator'] +
+            '</sup><span class="problem">/</span><sub class="problem">' + f['denominator'] + '</sub></span></p>';
     }
 }

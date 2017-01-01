@@ -1,4 +1,4 @@
-var definitions = {
+var template = {
     problem: [],
 
     correct_count: 0,
@@ -100,4 +100,4 @@ var definitions = {
     }
 };
 
-definitions.getProblem();
+template.getProblem();

@@ -185,3 +185,7 @@ span.frac > sub {
     display: block;
     font: inherit;
 }
+
+.score_board{
+    margin: 10px;
+}
