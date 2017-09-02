@@ -1,0 +1,55 @@
+<!--https://bl.ocks.org/mbostock/4062045-->
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>I Helped</h1>
+    </header>
+    <nav>
+        <ul>
+            <li id="li_game" onclick="onoff('game')">The Game</li>
+            <li id="li_rules" onclick="onoff('rules')">The Rules</li>
+            <li id="li_us" onclick="onoff('us')">Who We Are</li>
+            <li id="li_math" onclick="onoff('math')">The Math</li>
+        </ul>
+    </nav>
+    <div id="content">
+        <svg width="960" height="600"></svg>
+    </div>
+    <div id="overlay">
+        <div id="game" onclick="onoff('game')">
+            <h1>The Game</h1>
+            <p>
+
+            </p>
+        </div>
+        <div id="rules" onclick="onoff('rules')">
+            <h1>The Rules</h1>
+            <p>detailed legalese rules coming soon</p>
+        </div>
+        <div id="us" onclick="onoff('us')">
+            <h1>Who We Are</h1>
+            <p>We're a ragtag group of nerds who believe we can help people. While trying to think of ways to help we came
+            up the idea to make a game out of donating blood and money. We come from many different backgrounds but we share
+            the common thread of compassion. We saw an opportunity to help and we decided to make it a reality.
+            <ul>
+            <li>Jeramey Tyler</li>
+            <li>Benjamin Horne</li>
+            <li>Neil McGlohan</li>
+            <li>Mark Plagge</li>
+            <li>Nolan Pruitt</li>
+            <li>Eugenia Kontopoulou</li>
+        </ul></p>
+        </div>
+        <div id="math" onclick="onoff('math')">
+            <h1>The Math</h1>
+            <p>lorem ipsum</p>
+        </div>
+    </div>
+    <script src="javascript/index.js"></script>
+</body>

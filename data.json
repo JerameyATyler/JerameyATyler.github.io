@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {"id": "Jeramey", "group": 1},
+    {"id": "Ben", "group": 2},
+    {"id": "Neil", "group": 2},
+    {"id": "Nolan", "group": 2},
+    {"id": "Mark", "group": 2},
+    {"id": "Naomi", "group": 3},
+    {"id": "Alice", "group": 1},
+    {"id": "Bob", "group": 2},
+    {"id": "Chester", "group": 2},
+    {"id": "David", "group": 3},
+    {"id": "Eric", "group": 3},
+    {"id": "Farrah", "group": 3}
+  ],
+  "links": [
+    {"source": "Jeramey", "target": "Ben", "value": 1},
+    {"source": "Jeramey", "target": "Neil", "value": 1},
+    {"source": "Jeramey", "target": "Nolan", "value": 1},
+    {"source": "Jeramey", "target": "Mark", "value": 1},
+    {"source": "Mark", "target": "Naomi", "value": 1},
+    {"source": "Alice", "target": "Bob", "value": 1},
+    {"source": "Alice", "target": "Chester", "value": 1},
+    {"source": "Chester", "target": "David", "value": 1},
+    {"source": "Chester", "target": "Eric", "value": 1},
+    {"source": "Chester", "target": "Farrah", "value": 1}
+  ]
+
+}
