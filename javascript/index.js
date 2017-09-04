@@ -77,10 +77,3 @@ function onoff(d){
     $("#overlay").toggle();
     $("#" + d).toggle();
 }
-
-function highlight(d){
-    d3.select("#content").selectAll("svg").data()
-    d.forEach(function(element){
-
-    })
-}
